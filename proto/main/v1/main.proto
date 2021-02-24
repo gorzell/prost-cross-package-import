@@ -3,7 +3,9 @@ syntax = "proto3";
 package test.main.v1;
 
 import "other/v1/other.proto";
+import "third/v1/third.proto";
 
 message Main {
   test.other.v1.Other other = 1;
+  test.third.v1.Other third = 2;
 }
